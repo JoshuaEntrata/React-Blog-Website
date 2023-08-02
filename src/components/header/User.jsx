@@ -55,11 +55,6 @@ export const User = () => {
               </Link>
 
               <button className="box">
-                <BsEnvelopeHeart className="icon" />
-                <h4>Wishlist</h4>
-              </button>
-
-              <button className="box">
                 <RiContactsBookLine className="icon" />
                 <h4>Contact</h4>
               </button>

@@ -8,7 +8,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 5px 10px;
-  background: var(--white-color);
+  background: var(--background-color);
   border-radius: 20px;
 }
 
@@ -24,7 +24,7 @@ footer {
 }
 
 .socialbtn:hover {
-  background-color: var(--white-color);
+  background-color: var(--background-color);
 }
 
 .socialbtn svg {
@@ -40,7 +40,7 @@ footer {
 }
 
 .facebook:hover svg {
-  fill: var(--white-color);
+  fill: var(--background-color);
 }
 
 .github svg {
@@ -52,7 +52,7 @@ footer {
 }
 
 .github:hover svg {
-  fill: var(--white-color);
+  fill: var(--background-color);
 }
 
 .linkedin svg {
@@ -64,7 +64,7 @@ footer {
 }
 
 .linkedin:hover svg {
-  fill: var(--white-color);
+  fill: var(--background-color);
 }
 
 .instagram svg {
@@ -76,5 +76,5 @@ footer {
 }
 
 .instagram:hover svg {
-  fill: var(--white-color);
+  fill: var(--background-color);
 }
