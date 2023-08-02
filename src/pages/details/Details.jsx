@@ -20,21 +20,12 @@ export const Details = () => {
     <>
       {blogs ? (
         <section className="singlePost">
-          <div className="container">
-            <div className="left">
+          <div className="postContainer">
+            <div className="coverPhoto">
               <img src="blogs.cover" alt="" />
             </div>
 
-            <div className="right">
-              <div className="buttons">
-                <button className="button">
-                  <BsPencilSquare />
-                </button>
-                <button className="button">
-                  <AiOutlineDelete />
-                </button>
-              </div>
-
+            <div className="postBody">
               <h1>{blogs.title}</h1>
               <p>{blogs.desc}</p>
               <p>
