@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RiChatUploadLine } from "react-icons/ri";
+import { RiChatUploadLine, RiContactsBookLine } from "react-icons/ri";
 import { IoHelp } from "react-icons/io5";
 import { BsEnvelopeHeart } from "react-icons/bs";
 import { BiHome, BiLogOutCircle } from "react-icons/bi";
@@ -60,16 +60,9 @@ export const User = () => {
               </button>
 
               <button className="box">
-                <IoHelp className="icon" />
-                <h4>Help</h4>
+                <RiContactsBookLine className="icon" />
+                <h4>Contact</h4>
               </button>
-
-              <Link to="/login">
-                <button className="box">
-                  <BiLogOutCircle className="icon" />
-                  <h4>Logout</h4>
-                </button>
-              </Link>
             </div>
           )}
         </>
