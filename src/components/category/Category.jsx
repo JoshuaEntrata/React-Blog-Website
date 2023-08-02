@@ -4,16 +4,12 @@ import "./category.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { MdNavigateNext } from "react-icons/md";
-import { GrFormPrevious } from "react-icons/gr";
 
 const SampleNextArrow = (props) => {
   const { onClick } = props;
   return (
     <div className="control-btn" onClick={onClick}>
-      <button className="next">
-        <MdNavigateNext className="icon" />
-      </button>
+      <button className="next"></button>
     </div>
   );
 };
@@ -22,9 +18,7 @@ const SamplePrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div className="control-btn" onClick={onClick}>
-      <button className="prev">
-        <GrFormPrevious className="icon" />
-      </button>
+      <button className="prev"></button>
     </div>
   );
 };
@@ -38,6 +32,8 @@ export const Category = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 5000,
   };
 
   return (
@@ -46,14 +42,12 @@ export const Category = () => {
         <div className="content">
           <Slider {...settings}>
             {category.map((item) => (
-              <div className="boxes">
-                <div className="box" key={item.id}>
-                  <img src={item.cover} alt="cover" />
+              <div className="box" key={item.id}>
+                <img src={item.cover} alt="cover" />
 
-                  <div className="overlay">
-                    <h4>{item.category}</h4>
-                    <p>{item.title}</p>
-                  </div>
+                <div className="overlay">
+                  <h4>{item.category}</h4>
+                  <p>{item.title}</p>
                 </div>
               </div>
             ))}
