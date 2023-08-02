@@ -5,9 +5,14 @@
   --secondary-color: #badfe7;
   --background-color: #f6f6f2;
   --white-color: #f2f3fc;
+  --whiteborder-color: #e6e6e6;
   --mintgreen-color: #c2edce;
   --text-color: #388087;
   --jetblack-color: #343434;
+  --facebook-color: #3b5998;
+  --github-color: #333;
+  --linkedin-color: #0077b5;
+  --instagram-color: #c13584;
 }
 
 * {
@@ -18,8 +23,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f9f9f9;
-  color: #000;
+  background: var(--background-color);
+  color: var(--jetblack-color);
 }
 
 h1,
@@ -75,16 +80,16 @@ p {
 }
 
 label {
-  color: #999;
+  color: var(--jetblack-color);
   font-size: 13px;
 }
 
 form,
 .boxItems {
-  border: 1px solid #e6e6e6;
+  border: 1px solid var(--whiteborder-color);
   border-radius: 12px;
   padding: 20px;
-  background: #f2f3fc;
+  background: var(--white-color);
 }
 
 form {
