@@ -14,7 +14,7 @@ export const Header = () => {
     <>
       <header className="header">
         <div className="container flex">
-          <h1 class="logo">React Blog Website</h1>
+          <h1 class="logo">ReactBlog</h1>
 
           <nav>
             <ul>
