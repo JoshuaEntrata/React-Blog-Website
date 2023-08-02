@@ -38,10 +38,11 @@
 
 .blog .tag a {
   border: 2px solid var(--primary-color);
+  background: var(--primary-color);
   border-radius: 15px;
   padding: 1px 8px;
   font-size: 12px;
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .blog h3 {
