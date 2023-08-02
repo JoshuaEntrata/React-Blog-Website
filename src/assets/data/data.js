@@ -7,20 +7,15 @@ export const nav = [
   {
     id: 2,
     text: "about",
-    url: "/about",
+    url: "/account",
   },
   {
     id: 3,
-    text: "pages",
-    url: "/pages",
+    text: "Post",
+    url: "/create",
   },
   {
     id: 4,
-    text: "blog",
-    url: "/blog",
-  },
-  {
-    id: 5,
     text: "contact",
     url: "/contact",
   },

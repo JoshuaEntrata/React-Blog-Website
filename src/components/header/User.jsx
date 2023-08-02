@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiChatUploadLine } from "react-icons/ri";
 import { IoHelp } from "react-icons/io5";
-import { BsEnvelopeHeart, BsShopWindow } from "react-icons/bs";
-import { BiLogOutCircle } from "react-icons/bi";
+import { BsEnvelopeHeart } from "react-icons/bs";
+import { BiHome, BiLogOutCircle } from "react-icons/bi";
 
 export const User = () => {
   const [profileOpen, setProfileOpen] = useState(false);
@@ -40,17 +40,19 @@ export const User = () => {
                 </div>
               </Link>
 
+              <Link to="/">
+                <button className="box">
+                  <BiHome className="icon" />
+                  <h4>Home</h4>
+                </button>
+              </Link>
+
               <Link to="/create">
                 <button className="box">
                   <RiChatUploadLine class="icon" />
                   <h4>Create Post</h4>
                 </button>
               </Link>
-
-              <button className="box">
-                <BsShopWindow className="icon" />
-                <h4>My Order</h4>
-              </button>
 
               <button className="box">
                 <BsEnvelopeHeart className="icon" />
