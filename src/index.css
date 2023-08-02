@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --primary-color: #6fb3b8;
+  --secondary-color: #badfe7;
+  --background-color: #f6f6f2;
+  --white-color: #f2f3fc;
+  --mintgreen-color: #c2edce;
+  --text-color: #388087;
+  --jetblack-color: #343434;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -23,6 +33,10 @@ h3 {
 
 a {
   font-size: 17px;
+}
+
+a:visited {
+  color: inherit;
 }
 
 ul,

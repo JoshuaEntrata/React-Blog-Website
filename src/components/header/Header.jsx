@@ -13,10 +13,8 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="scontainer flex">
-          <div className="logo">
-            <img src={logo} alt="logo" width="50px" />
-          </div>
+        <div className="container flex">
+          <h1 class="logo">React Blog Website</h1>
 
           <nav>
             <ul>

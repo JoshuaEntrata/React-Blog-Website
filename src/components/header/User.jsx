@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RiImageAddLine } from "react-icons/ri";
-import { IoSettingsOutline } from "react-icons/io5";
-import { BsBagCheck } from "react-icons/bs";
-import { AiOutlineHeart } from "react-icons/ai";
-import { GrHelp } from "react-icons/gr";
-import { BiLogOut } from "react-icons/bi";
+import { RiChatUploadLine } from "react-icons/ri";
+import { IoHelp } from "react-icons/io5";
+import { BsEnvelopeHeart, BsShopWindow } from "react-icons/bs";
+import { BiLogOutCircle } from "react-icons/bi";
 
 export const User = () => {
-  const user = true;
   const [profileOpen, setProfileOpen] = useState(false);
 
   const close = () => {
@@ -17,75 +14,63 @@ export const User = () => {
   return (
     <div>
       <div className="profile">
-        {user ? (
-          <>
-            <button
-              className="img"
-              onClick={() => setProfileOpen(!profileOpen)}
-            >
-              <img
-                src="https://i.pinimg.com/1200x/6a/7f/ba/6a7fba865bd67b02a800bc1d60b98686.jpg"
-                alt="images"
-              />
-            </button>
+        <>
+          <button className="img" onClick={() => setProfileOpen(!profileOpen)}>
+            <img
+              src="https://i.pinimg.com/1200x/6a/7f/ba/6a7fba865bd67b02a800bc1d60b98686.jpg"
+              alt="images"
+            />
+          </button>
 
-            {profileOpen && (
-              <div className="openProfile boxItems" onClick={close}>
-                <Link to="/account">
-                  <div className="image">
-                    <div className="img">
-                      <img
-                        src="https://i.pinimg.com/1200x/6a/7f/ba/6a7fba865bd67b02a800bc1d60b98686.jpg"
-                        alt="images"
-                      />
-                    </div>
-
-                    <div className="text">
-                      <h4>Joshua Entrata</h4>
-                      <p>Mandaluyong, Philippines</p>
-                    </div>
+          {profileOpen && (
+            <div className="openProfile boxItems" onClick={close}>
+              <Link to="/account">
+                <div className="image">
+                  <div className="img">
+                    <img
+                      src="https://i.pinimg.com/1200x/6a/7f/ba/6a7fba865bd67b02a800bc1d60b98686.jpg"
+                      alt="images"
+                    />
                   </div>
-                </Link>
 
-                <Link to="/create">
-                  <button className="box">
-                    <RiImageAddLine class="icon" />
-                    <h4>Create Post</h4>
-                  </button>
-                </Link>
+                  <div className="text">
+                    <h4>Joshua Entrata</h4>
+                    <p>Mandaluyong, Philippines</p>
+                  </div>
+                </div>
+              </Link>
 
+              <Link to="/create">
                 <button className="box">
-                  <IoSettingsOutline className="icon" />
-                  <h4>My Account</h4>
+                  <RiChatUploadLine class="icon" />
+                  <h4>Create Post</h4>
                 </button>
+              </Link>
 
-                <button className="box">
-                  <BsBagCheck className="icon" />
-                  <h4>My Order</h4>
-                </button>
+              <button className="box">
+                <BsShopWindow className="icon" />
+                <h4>My Order</h4>
+              </button>
 
-                <button className="box">
-                  <AiOutlineHeart className="icon" />
-                  <h4>Wishlist</h4>
-                </button>
+              <button className="box">
+                <BsEnvelopeHeart className="icon" />
+                <h4>Wishlist</h4>
+              </button>
 
-                <button className="box">
-                  <GrHelp className="icon" />
-                  <h4>Help</h4>
-                </button>
+              <button className="box">
+                <IoHelp className="icon" />
+                <h4>Help</h4>
+              </button>
 
+              <Link to="/login">
                 <button className="box">
-                  <BiLogOut className="icon" />
+                  <BiLogOutCircle className="icon" />
                   <h4>Logout</h4>
                 </button>
-              </div>
-            )}
-          </>
-        ) : (
-          <Link to="/login">
-            <button>My Account</button>
-          </Link>
-        )}
+              </Link>
+            </div>
+          )}
+        </>
       </div>
     </div>
   );
