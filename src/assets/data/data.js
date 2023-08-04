@@ -7,7 +7,7 @@ export const nav = [
   {
     id: 2,
     text: "about",
-    url: "/account",
+    url: "/about",
   },
   {
     id: 3,
