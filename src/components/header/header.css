@@ -9,20 +9,20 @@ header {
   box-shadow: 0 0 4px 0 rgb(115 115 115 / 20%);
 }
 
-.userBar {
-  display: flex;
-  gap: 15px;
-}
-
-.userBar h4,
-.userBar p {
-  text-align: right;
-  color: var(--white-color);
-}
-
 .logo {
   font-size: 21px;
   color: var(--background-color);
+}
+
+.userBar button {
+  color: var(--background-color);
+}
+
+.headerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 40px;
 }
 
 nav ul {
@@ -118,6 +118,12 @@ nav a:active {
 
 @media screen and (max-width: 768px) {
   nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .userBar {
     display: none;
   }
 }

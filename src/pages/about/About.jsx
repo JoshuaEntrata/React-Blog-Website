@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../assets/images/pfp.jpg";
 import "./about.css";
 
 export const About = () => {

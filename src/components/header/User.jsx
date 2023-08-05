@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RiChatUploadLine, RiContactsBookLine } from "react-icons/ri";
+import {
+  RiChatUploadLine,
+  RiContactsBookLine,
+  RiMenuLine,
+} from "react-icons/ri";
 import { BiHome, BiUser } from "react-icons/bi";
+import { nav } from "../../assets/data/data";
 
 export const User = () => {
   const [profileOpen, setProfileOpen] = useState(false);
@@ -11,21 +16,23 @@ export const User = () => {
   };
   return (
     <div>
+      <nav>
+        <ul>
+          {nav.map((link) => (
+            <li key={link.id}>
+              <Link to={link.url}>{link.text}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
       <div className="profile">
         <>
           <div className="userBar">
-            <div className="text">
-              <h4>Joshua Entrata</h4>
-              <p>Mandaluyong, Philippines</p>
-            </div>
             <button
               className="img"
               onClick={() => setProfileOpen(!profileOpen)}
             >
-              <img
-                src="https://i.pinimg.com/1200x/6a/7f/ba/6a7fba865bd67b02a800bc1d60b98686.jpg"
-                alt="images"
-              />
+              <RiMenuLine />
             </button>
           </div>
 

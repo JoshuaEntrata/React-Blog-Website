@@ -1,7 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo192.png";
 import "./header.css";
-import { nav } from "../../assets/data/data";
 import { Link } from "react-router-dom";
 import { User } from "./User";
 
@@ -13,19 +11,9 @@ export const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="container flex">
+        <div className="headerFlex">
           <h1 class="logo">ReactBlog</h1>
-
-          <nav>
-            <ul>
-              {nav.map((link) => (
-                <li key={link.id}>
-                  <Link to={link.url}>{link.text}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="account flexCenter">
+          <div className="account">
             <User />
           </div>
         </div>
