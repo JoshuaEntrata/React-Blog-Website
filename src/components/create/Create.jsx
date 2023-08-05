@@ -5,22 +5,31 @@ export const Create = () => {
   return (
     <>
       <section className="newPost">
-        <div className="container boxItems">
-          <div className="img">
-            <img
-              src="https://i.pinimg.com/1200x/6a/7f/ba/6a7fba865bd67b02a800bc1d60b98686.jpg"
-              alt="images"
-            />
+        <form className="formContainer">
+          <label class="label">Text</label>
+          <textarea rows="15"></textarea>
+
+          <label class="label">Article Preview</label>
+          <div className="titlePart">
+            <label class="sublabel">Title</label>
+            <input type="text" />
+            <label className="sublabel">Tags</label>
+            <input type="text" />
           </div>
-          <form action="">
-            <div className="inputFile flexCenter">
-              <input type="file" />
-            </div>
-            <input type="text" placeholder="Title" />
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button className="button">Create Post</button>
-          </form>
-        </div>
+
+          <label class="label">Featured Image</label>
+          <div className="imgUpload">
+            <input type="file" id="file" name="file" />
+            <label for="file">
+              <div>
+                <span className="dropFile">Drop photo here</span>
+                <span className="orText">Or</span>
+                <span className="browseText">Browse</span>
+              </div>
+            </label>
+          </div>
+          <button class="button">Post article</button>
+        </form>
       </section>
     </>
   );
