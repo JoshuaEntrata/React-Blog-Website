@@ -1,6 +1,6 @@
 .aboutSection {
   min-height: 100vh;
-  padding: 2rem 14rem 6rem;
+  padding: 32px 224px 96px;
 }
 
 .pageTitle {
@@ -8,7 +8,6 @@
   font-size: 12rem;
   text-transform: uppercase;
   letter-spacing: -5px;
-  line-height: 16rem;
   color: var(--text-color);
 }
 
@@ -21,23 +20,33 @@
 .content .description {
   width: 20%;
   border-top: 1px solid var(--primary-color);
-  padding-top: 4rem;
+  padding-top: 64px;
 }
 
 .description h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 400;
 }
 
 .content .textBox {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 2rem;
+  gap: 20px;
   width: 50%;
   border-top: 1px solid var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
-  padding: 4rem 0;
+  padding: 64px 0;
+}
+
+.first .textBox {
+  align-items: flex-end;
+}
+
+.second .textBox {
+  align-items: flex-start;
+}
+
+.second .description h2 {
+  text-align: right;
 }
 
 .textBox p {
